@@ -4,8 +4,6 @@
 - Rayen Ben Youssef
 - Maram Ayari
 
-This project was developed as a university mobile application project in collaboration with my teammate Maram Ayari.
-
 ## Project Overview
 Not Today Thanks is an Android application developed as part of a university project. The project aims to provide a simple mobile experience built with Android native technologies, following clean project structure and modern Android app development practices.
 
