@@ -1,8 +1,8 @@
 # Not Today Thanks
 
 ## Authors
-- Rayen Ben Youssef
-- Maram Ayari
+- Rayen Ben Youssef A05
+- Maram Ayari A05
 
 ## Project Overview
 Not Today Thanks is an Android application developed as part of a university project. The project aims to provide a simple mobile experience built with Android native technologies, following clean project structure and modern Android app development practices.
