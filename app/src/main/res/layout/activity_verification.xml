@@ -10,7 +10,7 @@
     tools:context=".VerificationActivity">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imgv_ver_rby"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="0.3"
