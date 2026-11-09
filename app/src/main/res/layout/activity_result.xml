@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
+    android:background="@drawable/refuse_state_bg"
     android:layout_height="match_parent"
     tools:context=".ResultActivity">
 
@@ -14,10 +15,10 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="96dp"
         android:layout_marginEnd="32dp"
-        android:text="TextView"
+        android:text="[Nom] est en état d'arrestation temporelle"
         android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_nv_ma"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,11 +26,13 @@
         app:layout_constraintVertical_bias="0.275" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_nv_ma"
         android:layout_width="175dp"
         android:layout_height="51dp"
         android:layout_marginBottom="52dp"
-        android:text="Button"
+        android:backgroundTint="@color/red"
+        android:onClick="goback"
+        android:text="Nouveau voyageur"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

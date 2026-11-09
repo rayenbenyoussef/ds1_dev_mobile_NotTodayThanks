@@ -1,6 +1,8 @@
 package com.example.nottodaythanks;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,10 +17,15 @@ public class VerificationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_verification);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+
+    }
+    public void refuse(View view){
+        Intent i = new Intent(this,ResultActivity.class);
+        startActivity(i);
+    }
+
+    public void approve(View view){
+        Intent i = new Intent(this,ResultActivity.class);
+        startActivity(i);
     }
 }
