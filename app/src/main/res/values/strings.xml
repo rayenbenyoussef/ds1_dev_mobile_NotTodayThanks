@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Not today, Thanks!!</string>
-
+    <string name="refuser">"%1$s est en état d'arrestation temporelle</string>
+    <string name="approved">Bon voyage %1$s</string>
 </resources>
