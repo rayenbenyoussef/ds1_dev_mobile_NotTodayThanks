@@ -15,14 +15,16 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="0.3"
-        android:paddingTop="50dp"
-        android:scaleType="fitStart"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:scaleType="fitXY"
         android:src="@drawable/pastmod" />
 
     <RelativeLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="0.7">
+        android:layout_weight="0.7"
+        android:backgroundTint="#FFFFFF">
 
         <TextView
             android:id="@+id/textView2"
@@ -30,43 +32,33 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="67dp"
-            android:layout_marginTop="198dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="283dp"
             android:text="from 2026"
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/tv_nom_rby"
-            android:layout_width="143dp"
-            android:layout_height="wrap_content"
+            android:layout_width="175dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/textView3"
             android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="71dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="2dp"
             android:text="john doe"
-            android:textAlignment="center"
+            android:textAlignment="inherit"
             android:textSize="34sp" />
 
         <TextView
             android:id="@+id/tv_ad_rby"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
             android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="411dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="141dp"
             android:text="to 2112"
             android:textSize="24sp" />
-
-        <ImageView
-            android:id="@+id/imageView312"
-            android:layout_width="286dp"
-            android:layout_height="75dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="11dp"
-            android:layout_marginBottom="11dp"
-            android:src="@drawable/barcode" />
 
         <TextView
             android:id="@+id/tv_moif_rby"
@@ -74,8 +66,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="325dp"
-            android:layout_marginEnd="-104dp"
+            android:layout_marginTop="381dp"
+            android:layout_marginEnd="-95dp"
             android:rotation="90"
             android:text="Modification du passé"
             android:textAlignment="center"
@@ -83,48 +75,70 @@
 
         <TextView
             android:id="@+id/tv_age_rby"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/tv_nom_rby"
+            android:layout_width="146dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/textView4"
             android:layout_alignStart="@+id/tv_nom_rby"
             android:layout_alignEnd="@+id/tv_nom_rby"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginEnd="75dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="-3dp"
+            android:layout_marginEnd="-2dp"
             android:text="21 ans"
-            android:textSize="20sp" />
+            android:textSize="34sp" />
 
         <Button
             android:id="@+id/btn_aprv_rby"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/imageView312"
+            android:layout_width="221dp"
+            android:layout_height="60dp"
+            android:layout_above="@+id/btn_ref_rby"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="19dp"
-            android:layout_marginBottom="41dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginBottom="13dp"
+            android:backgroundTint="#D9E1F7"
             android:onClick="approve"
-            android:text="Approuver" />
+            android:text="Approuver"
+            android:textColor="@color/green"
+            app:cornerRadius="10dp"
+            app:strokeColor="@color/green"
+            app:strokeWidth="4dp" />
 
         <Button
             android:id="@+id/btn_ref_rby"
+            android:layout_width="221dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#D9E1F7"
+            android:onClick="refuse"
+            android:text="Refuser"
+            android:textColor="@color/red"
+            app:cornerRadius="10dp"
+            app:strokeColor="@color/red"
+            app:strokeWidth="4dp" />
+
+        <TextView
+            android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/btn_aprv_rby"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="-1dp"
-            android:layout_marginEnd="30dp"
-            android:onClick="refuse"
-            android:text="Refuser" />
-
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="221dp"
-            android:layout_height="236dp"
-            android:layout_below="@+id/textView2"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="9dp"
-            android:layout_marginTop="-15dp"
-            android:rotation="129"
-            android:src="@drawable/arrow_removebg" />
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="48dp"
+            android:text="Nom"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_nom_rby"
+            android:layout_alignStart="@+id/textView3"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="15dp"
+            android:text="Age"
+            android:textSize="24sp" />
+
     </RelativeLayout>
 </LinearLayout>
