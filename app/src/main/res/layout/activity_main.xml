@@ -10,28 +10,38 @@
     tools:context=".MainActivity" >
 
 
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:rotation="25"
+        android:text="TODAY,"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/imageView" />
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="103dp"
         android:layout_height="92dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="28dp"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@mipmap/ic_launcher" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="243dp"
-        android:layout_height="62dp"
-        android:layout_marginTop="24dp"
-        android:text="Welcome to our time traveling app"
+        android:layout_width="141dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:text="THANKS!"
         android:textAlignment="center"
-        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
@@ -46,6 +56,7 @@
         android:ems="10"
         android:hint="ton nom"
         android:inputType="text"
+        android:textColorHint="#9899A6"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -62,6 +73,7 @@
         android:ems="10"
         android:hint="ton année de naissance"
         android:inputType="number"
+        android:textColorHint="#9899A6"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -78,6 +90,7 @@
         android:ems="10"
         android:hint="ton année de destination"
         android:inputType="number"
+        android:textColorHint="#9899A6"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -98,14 +111,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Tourisme"
-            android:textSize="16sp" />
+            android:textColor="@color/black"
+            android:textSize="20sp" />
 
         <RadioButton
             android:id="@+id/rbtn_modpas_ma"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Modification du passé"
-            android:textSize="16sp" />
+            android:textColor="@color/black"
+            android:textSize="20sp" />
 
         <RadioButton
             android:id="@+id/rbtn_fuite_ma"
@@ -113,19 +128,37 @@
             android:layout_height="wrap_content"
             android:minHeight="48dp"
             android:text="Fuite"
-            android:textSize="16sp" />
+            android:textColor="@color/black"
+            android:textSize="20sp" />
     </RadioGroup>
 
     <Button
         android:id="@+id/insp_btn_ma"
-        android:layout_width="240dp"
-        android:layout_height="59dp"
+        android:layout_width="221dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#D9E1F7"
         android:onClick="toVerif"
         android:text="Inspecter le profil"
+        android:textColor="@color/pink"
         android:textSize="20sp"
+        app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rdgroup_ma" />
+        app:layout_constraintTop_toBottomOf="@+id/rdgroup_ma"
+        app:layout_constraintVertical_bias="0.41000003"
+        app:strokeColor="@color/blue"
+        app:strokeWidth="4dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:rotation="-25"
+        android:text="NOT"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/imageView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
