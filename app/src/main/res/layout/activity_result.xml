@@ -27,15 +27,20 @@
 
     <Button
         android:id="@+id/btn_nv_ma"
-        android:layout_width="175dp"
-        android:layout_height="51dp"
+        android:layout_width="221dp"
+        android:layout_height="60dp"
         android:layout_marginBottom="52dp"
-        android:backgroundTint="@color/red"
+        android:backgroundTint="#D9E1F7"
         android:onClick="goback"
         android:text="Nouveau voyageur"
+        android:textColor="@color/pink"
+        android:textSize="16sp"
+        app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/blue"
+        app:strokeWidth="4dp" />
 
     <ImageView
         android:id="@+id/imageView2"
