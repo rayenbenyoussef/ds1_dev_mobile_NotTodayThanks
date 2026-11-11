@@ -9,14 +9,20 @@
     android:weightSum="1"
     android:background="@drawable/bg"
     tools:context=".VerificationActivity">
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        app:cardCornerRadius=""
+        android:layout_height="wrap_content">
 
+
+    </com.google.android.material.card.MaterialCardView>
     <ImageView
         android:id="@+id/imgv_ver_rby"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="0.3"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp"
         android:scaleType="fitXY"
         android:src="@drawable/pastmod" />
 
@@ -26,65 +32,112 @@
         android:layout_weight="0.7"
         android:backgroundTint="#FFFFFF">
 
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="143dp"
+            android:layout_height="113dp"
+            android:layout_below="@+id/textView7"
+            android:layout_alignStart="@+id/textView7"
+            android:layout_alignEnd="@+id/textView7"
+            android:layout_marginStart="-17dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="-17dp"
+            app:srcCompat="@drawable/arrow" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="39dp"
+            android:layout_marginTop="21dp"
+            android:text="from 2026"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="42dp"
+            android:layout_marginStart="11dp"
             android:layout_marginTop="283dp"
-            android:text="from 2026"
+            android:text="traveling"
+            android:textColor="@color/black"
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/tv_nom_rby"
-            android:layout_width="175dp"
+            android:layout_width="wrap_content"
             android:layout_height="48dp"
             android:layout_below="@+id/textView3"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="23dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="2dp"
+            android:background="@drawable/tv_verif_design"
+            android:gravity="center_horizontal|center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
             android:text="john doe"
             android:textAlignment="inherit"
-            android:textSize="34sp" />
+            android:textColor="@color/black"
+            android:textSize="28sp" />
 
         <TextView
             android:id="@+id/tv_ad_rby"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textView2"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="141dp"
+            android:layout_below="@+id/textView7"
+            android:layout_alignStart="@+id/imageView3"
+            android:layout_alignEnd="@+id/imageView3"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="131dp"
+            android:layout_marginEnd="21dp"
+            android:background="@drawable/tv_verif_design"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
             android:text="to 2112"
+            android:textColor="@color/black"
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/tv_moif_rby"
-            android:layout_width="292dp"
-            android:layout_height="wrap_content"
+            android:layout_width="280dp"
+            android:layout_height="48dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="381dp"
-            android:layout_marginEnd="-95dp"
+            android:layout_marginTop="379dp"
+            android:layout_marginEnd="-90dp"
+            android:background="@drawable/tv_verif_design"
+            android:gravity="center_horizontal|center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
             android:rotation="90"
             android:text="Modification du passé"
             android:textAlignment="center"
+            android:textColor="#D500F9"
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/tv_age_rby"
-            android:layout_width="146dp"
-            android:layout_height="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
             android:layout_below="@+id/textView4"
             android:layout_alignStart="@+id/tv_nom_rby"
-            android:layout_alignEnd="@+id/tv_nom_rby"
-            android:layout_marginStart="0dp"
-            android:layout_marginTop="-3dp"
-            android:layout_marginEnd="-2dp"
+            android:layout_marginStart="-1dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/tv_verif_design"
+            android:gravity="center_horizontal|center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
             android:text="21 ans"
-            android:textSize="34sp" />
+            android:textColor="@color/black"
+            android:textSize="28sp" />
 
         <Button
             android:id="@+id/btn_aprv_rby"
@@ -127,6 +180,7 @@
             android:layout_marginStart="14dp"
             android:layout_marginTop="48dp"
             android:text="Nom"
+            android:textColor="@color/black"
             android:textSize="24sp" />
 
         <TextView
@@ -135,9 +189,10 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/tv_nom_rby"
             android:layout_alignStart="@+id/textView3"
-            android:layout_marginStart="1dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="10dp"
             android:text="Age"
+            android:textColor="@color/black"
             android:textSize="24sp" />
 
     </RelativeLayout>
