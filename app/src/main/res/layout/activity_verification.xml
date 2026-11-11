@@ -9,13 +9,7 @@
     android:weightSum="1"
     android:background="@drawable/bg"
     tools:context=".VerificationActivity">
-    <com.google.android.material.card.MaterialCardView
-        android:layout_width="wrap_content"
-        app:cardCornerRadius=""
-        android:layout_height="wrap_content">
 
-
-    </com.google.android.material.card.MaterialCardView>
     <ImageView
         android:id="@+id/imgv_ver_rby"
         android:layout_width="0dp"
